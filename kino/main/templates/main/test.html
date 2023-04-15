@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'main_page' %}" method="get">
+          <div class="form-group">
+            <input type="text" name="search" value="{{ search }}" class="form-control" placeholder="Search Movies...">
+          </div>
+</form>
+{{movies}}
+</body>
+</html>
