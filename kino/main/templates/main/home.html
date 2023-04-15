@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<form>
+<div>
+  <input type="search" placeholder="Search" name="search"  />
+  <button type="submit">search</button>
+</div>
+</form>
+{% for i in movies%}
+{{i.name}}<br>
+{{i.year}}<br>
+{{i.countries}}
+<hr><hr>
+{% endfor %}
+
+</body>
+</html>
